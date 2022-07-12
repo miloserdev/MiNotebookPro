@@ -1,0 +1,19 @@
+If there is a problem that Ctrl+Alt+F* can not switch TTYs
+
+The reason may be is the broken locale configuration
+
+Type `localectl status`
+
+   System Locale: LANG=en_US.UTF-8
+                  LC_COLLATE=C
+       VC Keymap: en
+      X11 Layout: n/a
+
+Now change X11 Layout `localectl set-x11-keymap pl`
+
+   System Locale: LANG=en_US.UTF-8
+                  LC_COLLATE=C
+       VC Keymap: pl2
+      X11 Layout: pl
+
+Now X11 Layout is pl and TTY switch will be work fine
