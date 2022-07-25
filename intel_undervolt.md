@@ -1,7 +1,7 @@
 **Linux version**  
 How to undervolt CPU on bios TIMI TM1707 Xiaomi Mi Notebook Pro GTX 1050  
   
-1. Download /Tools/bootx64.EFI  
+1. Download [/Tools/bootx64.EFI](https://github.com/miloserdev/MiNotebookPro/raw/main/Tools/bootx64.EFI)  
 2. Pick usb flash drive then `mkdir EFI`, `cd EFI`, `mkdir BOOT`  
 3. `cp bootx64.EFI` into `BOOT` dir  
 4. Reboot and type F2 on startup then select usb flash as boot device  
