@@ -7,3 +7,7 @@ First stop nbfc service then
 type `sudo ec-probe write 0xA0 0xFF` - set left fan speed to max  
 type `sudo ec-probe write 0xCB 0xFF` - set both fans speed to max (works if 0xA0 is not set)  
 0xCB - 0x11 to return both fans
+
+You also may use XEC util
+yay -S xec
+all commands the same
