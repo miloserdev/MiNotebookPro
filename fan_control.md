@@ -1,9 +1,9 @@
-Now we can not set cpu fan speed or edit the temperature curve because the bios locked.
+Now we can not edit the temperature curve because the bios locked.
 TIMI TM1707 XMAKB5RRP0804
-
-Do not use utils like NBFC because this may break the charging port.
-
-Charging is stopped, blinking red light:
-`sudo systemctl stop nbfc`
-`sudo systemctl disable nbfc`
-`sudo pacman -R nbfc`
+  
+#WARNING!  
+##THIS MAY BRICK YOUR LAPTOP IF TYPE WRONG REGISTER!  
+First stop nbfc server then  
+type `sudo ec-probe 0xA0 0xFF` - set left fan speed to max  
+type `sudo ec-probe 0xCB 0xFf` - set both fans speed to max (works if 0xA0 is not set)  
+0xCB - 0x11 to return both fans
